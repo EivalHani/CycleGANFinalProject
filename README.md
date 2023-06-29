@@ -9,7 +9,9 @@ Running instructions:
 
 Start:
 upload the directory "CycleGANTrained" to the google drive.
-open colab notebook and run:
+open colab notebook and run file CycleGANTest.ipynb
+
+or:
 
 1. connect tou you google Drive:
 from google.colab import drive
