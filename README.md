@@ -1,12 +1,15 @@
 # CycleGANFinalProject
  General Description
+ 
 Our system embeds a patient's medical diagnosis image within a container image, preserving the sensitive information's full medical confidentiality. The system is also capable of restoring the original medical image.
 Our system offers a secure and convenient method of transferring sensitive information.
 
   Software Environment
+  
 ●	Colab: Used Colab to execute shell commands.
 
   Running Instruction
+  
 Follow these additional steps:
 
 1. Upload the code directory  folder to your drive.
