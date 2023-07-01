@@ -4,6 +4,8 @@
    
 This trained model embeds a patient's medical diagnosis image within a container image, preserving the sensitive information's full medical confidentiality. The model is also capable of restoring the original medical image.
 This trained model offers a secure and convenient method of transferring sensitive information. 
+
+
    Software Environment
 
    
