@@ -27,7 +27,7 @@ Follow these additional steps:
 If you want to keep training or use different dataset, follow the instructions on CycleGANOptions.ipynb.
 
 
-We tok the trained model from thos link:
+We took the trained model from this link:
 
 [https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/master](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
