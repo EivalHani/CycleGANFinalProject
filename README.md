@@ -1,15 +1,17 @@
 # CycleGANFinalProject
-General description:
-The trained cycleGAN model with all the weights and the checkpoints. 
-
-Software environment:
+             7.1 General Description
+Our system embeds a patient's medical diagnosis image within a container image, preserving the sensitive information's full medical confidentiality. The system is also capable of restoring the original medical image.
+Our system offers a secure and convenient method of transferring sensitive information. 
+               7.2 Software Environment
 ●	Colab: Used Colab to execute shell commands.
 
-Running instructions:
+               7.3 Running Instruction
+Follow these additional steps:
 
-Start:
-upload the directory "CycleGANTrained" to the google drive.
-open colab notebook and run file CycleGANTest.ipynb
+1. Upload the code directory  folder to your drive.
+2. Open the CycleGanProjFinal.ipynb file on Google Colab from your drive.
+3. Press Runtime -> Run all
+4. See the results: Go to the results directory -> MRItoZebra -> test_345 (or other number if you chose other epoch)
 
 or:
 
@@ -33,23 +35,16 @@ drive.mount('/content/drive')
    !python test.py --dataroot /content/drive/MyDrive/CycleGANTrained/dataset --name MRItoZebra --model cycle_gan --epoch 345
 
 6. See the results:
-   Go to the results directory -> MRIToZebra -> test_345 (or other number if you chose other epoch)
-
+   Go to the results directory -> MRItoZebra -> test_345 (or other number if you chose other epoch)
 
 More:
-   if you want to keep training, run:
-   with constant learning rate (change the epoch from the starting epoch you choose):
-  !python train.py --dataroot /content/drive/MyDrive/CycleGANApple/dataset --name MRItoApple --model cycle_gan --continue_train --epoch_count 201 --n_epochs 400 --n_epochs_decay 10000 --lr 0.0002
-
-In this command, I've set n_epochs_decay to 10000. This means that the learning rate will start decaying only after 10000 epochs, which effectively makes the learning rate constant at 0.0002 for the training duration of less then 1000 epochs.If you want more than 10000 just change the n_epochs_decay number.
-
-
-
-if you want decay learning rate:
-!python train.py --dataroot /content/drive/MyDrive/CycleGAN/dataset --name MRItoZebra --model cycle_gan --continue_train --epoch_count 296 --n_epochs 295 --n_epochs_decay 200 --lr 0.0002 --display_id 0
-
-epoch_count is on which epoch we are now, n_epochs is the number of epochs with a constant learning rate and n_epochs_decay is the count of epochs from now untill the learning rate weill get to 0.
-
+If you want to keep training, add a cell and run: 
+With constant learning rate (change the epoch from the starting epoch you choose):
+!python train.py --dataroot /content/drive/MyDrive/CycleGANTrained/dataset --name MRItoZebra --model cycle_gan --continue_train --epoch_count 201 --n_epochs 400 --n_epochs_decay 10000 --lr 0.0002
+In this command, We set n_epochs_decay to 10000. This means that the learning rate will start decaying only after 10000 epochs, which effectively makes the learning rate constant at 0.0002 for the training duration of less than 1000 epochs. If you want more than 10000 just change the n_epochs_decay number.
+if you want a decay learning rate(change the epoch from the starting epoch you choose):
+!python train.py --dataroot /content/drive/MyDrive/CycleGANTrained/dataset --name MRItoZebra --model cycle_gan --continue_train --epoch_count 296 --n_epochs 295 --n_epochs_decay 200 --lr 0.0002 --display_id 0
+epoch_count is on which epoch we are now, n_epochs is the number of epochs with a constant learning rate and n_epochs_decay is the count of epochs from now until the learning rate will get to 0.
 
 
 Good Luck!
